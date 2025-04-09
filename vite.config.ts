@@ -6,7 +6,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 export default mergeConfig(
   defineConfig({
-    base: isProd ? "/front_5th_chapter1-2/" : "/",
+    base: isProd ? "/front_5th_chapter1-3/" : "/",
     plugins: [react()],
   }),
   defineTestConfig({
