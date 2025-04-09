@@ -6,13 +6,13 @@ import {
 } from "../types";
 
 export const UserContext = createContext<UserContextType | undefined>(
-  undefined
+  undefined,
 );
 export const NotificationContext = createContext<
   NotificationContextType | undefined
 >(undefined);
 export const ThemeContext = createContext<ThemeContextType | undefined>(
-  undefined
+  undefined,
 );
 
 export const useUserContext = () => {
@@ -26,7 +26,7 @@ export const useNotificationContext = () => {
   const context = useContext(NotificationContext);
   if (!context)
     throw new Error(
-      "useNotificationContext must be used within NotificationContext.Provider"
+      "useNotificationContext must be used within NotificationContext.Provider",
     );
   return context;
 };
@@ -35,7 +35,7 @@ export const useThemeContext = () => {
   const context = useContext(ThemeContext);
   if (!context)
     throw new Error(
-      "useThemeContext must be used within ThemeContext.Provider"
+      "useThemeContext must be used within ThemeContext.Provider",
     );
   return context;
 };

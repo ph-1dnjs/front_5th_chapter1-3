@@ -4,7 +4,7 @@ import { FunctionComponent } from "react";
 
 export function memo<P extends object>(
   Component: FunctionComponent<P>,
-  _equals = shallowEquals
+  _equals = shallowEquals,
 ) {
   let prevProps: P | null = null;
   let prevResult = null;

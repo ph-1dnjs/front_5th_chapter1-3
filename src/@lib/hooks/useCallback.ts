@@ -3,7 +3,7 @@ import { DependencyList, useMemo } from "react";
 
 export function useCallback<T extends Function>(
   factory: T,
-  _deps: DependencyList
+  _deps: DependencyList,
 ) {
   return useMemo(() => factory, _deps);
 }

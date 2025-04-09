@@ -35,7 +35,7 @@ export const AppProviders: React.FC<{ children: React.ReactNode }> = ({
   const userContextValue = useMemo(() => ({ user, login, logout }), [user]);
   const notificationContextValue = useMemo(
     () => ({ notifications, addNotification, removeNotification }),
-    [notifications]
+    [notifications],
   );
 
   return (
